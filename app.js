@@ -26,7 +26,7 @@ function makeWebhook(name) {
 
   // POST = the real webhook events
   app.post(`/${name}`, (req, res) => {
-    console.log(\n========== /${name} ==========);
+    console.log('\n========== /${name} ==========');
     console.log(JSON.stringify(req.body, null, 2));
     res.sendStatus(200);
   });
